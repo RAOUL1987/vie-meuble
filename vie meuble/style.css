@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+.navbar {
+  width: 100%;
+  height: 75px;
+  padding: 0 8%;
+  display: flex;
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.navbar .services {
+  width: 640px;
+  padding: 15px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .services .link {
+  padding: 5px;
+  font-family: "poppins";
+  font-size: 25px;
+  text-decoration: none;
+  color: #99163b;
+}
+
+@media screen and (max-width: 810px) {
+  .navbar .services {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background: rgba(0, 0, 0, 0.911);
+    display: none;
+  }
+
+  .navbar .services.show {
+    display: block;
+  }
+
+  .navbar .services .link {
+    display: block;
+    color: #fff;
+    margin-right: 25px;
+    text-align: end;
+  }
+
+  .item {
+    width: 25px;
+    margin: 5px;
+    border: 1px solid #000;
+  }
+
+  .ambuger {
+    padding: 25px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  #salon .deco {
+    font-size: 18px;
+  }
+
+  .banner .text .btn {
+    margin-left: 20px;
+  }
+}
+
+.banner {
+  background-image: url(img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+}
+
+.banner .text {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #f9f8fc;
+  background: #4c4e516e;
+}
+
+.text .univ {
+  font-size: 35px;
+  padding-top: 135px;
+}
+
+/* text */
+
+h1 {
+  font-size: 50px;
+  margin: 10px 0;
+  color: #99163b;
+}
+
+.bttn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 220px;
+  height: 50px;
+  margin: 35px 45px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.bttn .meubles {
+  font-size: 35px;
+  margin: 25px;
+}
+
+.bttn a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #99163b;
+}
+
+/* salon */
+
+.goutier {
+  padding: 0 45px;
+  position: relative;
+}
+
+.title {
+  color: #b8980bd0;
+  font-size: 40px;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 40px;
+  padding: 45px 0 10px 0;
+  text-align: center;
+  color: #99163b;
+}
+
+.titre img {
+  float: left;
+  shape-outside: circle();
+  width: 40%;
+  max-width: 520px;
+  min-width: 320px;
+  height: auto;
+  border-radius: 50%;
+  border-bottom-left-radius: 0;
+  margin-right: 35px;
+  text-align: justify;
+}
+
+.titre .deco {
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.bttn .button-btn {
+  width: 220px;
+  height: 50px;
+  margin: 40px 0;
+  background: #99163b;
+  border: 1px solid #99163b;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.bttn .button-btn a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.button-btn:hover {
+  background: #000;
+  border: none;
+}
+
+/* chambre */
+
+#left img {
+  float: right;
+  shape-outside: ellipse();
+  max-width: 520px;
+  height: auto;
+  border-radius: 50%;
+  border-bottom-right-radius: 0;
+  margin-left: 35px;
+}
+
+.titre .deco-chambre {
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* Bureau */
+
+/* Nos projets */
+
+.titTre {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titTre p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.goutier .vue {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.goutier .vue img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Contact */
+
+.tiTre-contact {
+  text-align: center;
+  color: #b8980bd0;
+}
+
+.input-group {
+  max-width: 660px;
+  display: block;
+  margin: auto;
+}
+
+.input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.input input {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.input-group button {
+  width: 100%;
+  height: 50px;
+  border-radius: 999px;
+  font-size: 22px;
+  font-weight: 500;
+  background: #99163b;
+  border: 2px solid #99163b;
+  color: #fff;
+}
+
+.input .input-label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input-group button:hover {
+  background: #000;
+  border: none;
+}
+
+.input textarea {
+  border: 1px solid #000;
+  border-radius: 3px;
+  width: 100%;
+  height: 180px;
+}
+
+@media screen and (max-width: 737px) {
+  .bttn a {
+    font-size: 20px;
+  }
+
+  .btn {
+    margin: 15px;
+    width: 180px;
+  }
+
+  .bttn .meubles {
+    font-size: 25px;
+    margin: 25px 0 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .bttn .meubles {
+    font-size: 18px;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .text h1 {
+    font-size: 35px;
+  }
+
+  .text .univ {
+    font-size: 30px;
+  }
+
+  .bttn a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .banner .text {
+    height: 280px;
+  }
+
+  .salon-title P {
+    font-size: 20px;
+  }
+
+  .text .univ {
+    font-size: 25px;
+  }
+
+  .text h1 {
+    font-size: 25px;
+    color: #000;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .bttn a {
+    font-size: 15px;
+  }
+
+  .bttn .btn {
+    margin: 10px;
+  }
+
+  .bttn .meubles {
+    margin: 0;
+  }
+
+  .banner img {
+    height: 60vh;
+  }
+
+  .banner .text {
+    top: 20vh;
+  }
+
+  .titre img {
+    position: absolute;
+    margin: 0 auto;
+  }
+
+  .titre .deco {
+    position: relative;
+    top: 320px;
+  }
+
+  .titre .deco-chambre {
+    position: relative;
+    top: 320px;
+  }
+
+  #left img {
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+  }
+
+  .tiTre-contact {
+    font-size: 30px;
+  }
+}
+
+/* footer */
+
+footer p {
+  text-align: center;
+  padding-top: 35px;
+  position: relative;
+}
